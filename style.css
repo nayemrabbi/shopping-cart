@@ -1,55 +1,93 @@
-body{
-	background: #fff;
+body {
+  background: #fff;
 }
-.cart{
-	margin: 100px 0;
-	background-color: #F6F5FA;;
-	padding: 60px 0;
+/*Navbar Area Start Here*/
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
-.total-price{
-	padding-bottom: 15px;
+.nav-area {
+  background-color: #f6f5fa;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 15vh;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 }
-.cart-item{
-	background-color: #fff;
-	border-radius: 10px;
-	padding: 15px 20px;
-	margin-bottom: 20px;
+.nav-area ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  list-style: none;
 }
-.center-item{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+
+.nav-area ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #1e1c42;
+  font-weight: bold;
+  transition: all 0.2s ease;
 }
-.cart-item img{
-	width: 115px;
+.nav-area ul li a:hover {
+  border-bottom: 2px solid rgb(49, 49, 49);
 }
-.cart-item h5{
-    padding: 0 45px;
+.nav-area .fas {
+  font-size: 24px;
+  color: #1e1c42;
 }
-.cart-item .remove-item{
-	width: 25px!important;
+/*Navbar Area End Here*/
+
+.cart {
+  margin: 60px 0;
+  background-color: #f6f5fa;
+  padding: 60px 0;
 }
-.btn-default{
-	background-color: #fff;
+.total-price {
+  padding-bottom: 15px;
 }
-.cart-item .form-control{
-	background-color: #F6F5FA;
-	border: none;
-    width: 65px;
-    border-radius: 10px!important;
-    font-weight: 700;
-    font-size: 20px;
+.cart-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
 }
-.input-group{
-	width: unset;
+.center-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-.status{
-	text-align: right;
+.cart-item img {
+  width: 115px;
 }
-.check-out{
-    float: right;
-    padding: 10px 30px;
-	font-size: 19px;
-	background-color: #2FBE70;
-	border: none;
+.cart-item h5 {
+  padding: 0 45px;
+}
+.cart-item .remove-item {
+  width: 25px !important;
+}
+.btn-default {
+  background-color: #fff;
+}
+.cart-item .form-control {
+  background-color: #f6f5fa;
+  border: none;
+  width: 65px;
+  border-radius: 10px !important;
+  font-weight: 700;
+  font-size: 20px;
+}
+.input-group {
+  width: unset;
+}
+.status {
+  text-align: right;
+}
+.check-out {
+  float: right;
+  padding: 10px 30px;
+  font-size: 19px;
+  background-color: #2fbe70;
+  border: none;
 }
